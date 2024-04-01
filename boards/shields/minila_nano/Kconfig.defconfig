@@ -1,0 +1,6 @@
+if SHIELD_MINILA_NANO
+
+config ZMK_KEYBOARD_NAME
+    default "MinilaNano"
+
+endif

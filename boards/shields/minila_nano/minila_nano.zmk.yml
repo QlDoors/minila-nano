@@ -1,0 +1,8 @@
+file_format: "1"
+id: minila_nano
+name: MinilaNano
+type: shield
+url: https://github.com/QlDoors/minila-nano
+requires: [pro_micro]
+features:
+  - keys
