@@ -1,4 +1,4 @@
-/*
+   /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -37,28 +37,28 @@
         diode-direction = "row2col";
 
         col-gpios
-            = <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 0
-            , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 1
-            , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 2
-            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 3
-            , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 4
+            = <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 0
+            , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 1
+            , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 2
+            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 3
+            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 4
             , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 5
-            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 6
-            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 7
-            , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 8
-            , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 9
-            , <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 10
+            , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 6
+            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 7
+            , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 8
+            , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 9
+            , <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col 10
             ;
 
         row-gpios
-            = <&gpio0 9  GPIO_ACTIVE_HIGH> // row 0
-            , <&gpio0 10 GPIO_ACTIVE_HIGH> // row 1
-            , <&gpio1 11 GPIO_ACTIVE_HIGH> // row 2
+            = <&gpio0 31 GPIO_ACTIVE_HIGH> // row 0
+            , <&gpio0 29 GPIO_ACTIVE_HIGH> // row 1
+            , <&gpio0 2  GPIO_ACTIVE_HIGH> // row 2
+            , <&gpio1 15 GPIO_ACTIVE_HIGH> // row 2
             , <&gpio1 13 GPIO_ACTIVE_HIGH> // row 3
-            , <&gpio1 15 GPIO_ACTIVE_HIGH> // row 4
-            , <&gpio0 2  GPIO_ACTIVE_HIGH> // row 5
-            , <&gpio0 29 GPIO_ACTIVE_HIGH> // row 6
-            , <&gpio0 31 GPIO_ACTIVE_HIGH> // row 7
+            , <&gpio1 11 GPIO_ACTIVE_HIGH> // row 4
+            , <&gpio0 10 GPIO_ACTIVE_HIGH> // row 5
+            , <&gpio0 9  GPIO_ACTIVE_HIGH> // row 6
             ;
     };
 };
