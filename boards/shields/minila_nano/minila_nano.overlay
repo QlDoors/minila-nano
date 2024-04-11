@@ -12,6 +12,26 @@
         zmk,matrix-transform = &default_transform;
     };
 
+    leds {
+            compatible = "gpio-leds";
+            led_0: led_red {
+                gpios = <&gpio0 21 GPIO_ACTIVE_LOW>;
+                label = "Red LED";
+                status = "okay";
+            };
+            led_1: led_blue {
+                gpios = <&gpio1 23 GPIO_ACTIVE_LOW>;
+                label = "Blue LED";
+                status = "okay";
+            };
+        };
+
+    // These aliases are provided for compatibility with samples
+    aliases {
+        ledred   = &led_0;
+        ledblue  = &led_1;
+    };
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <11>;
