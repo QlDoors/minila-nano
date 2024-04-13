@@ -15,12 +15,12 @@
     leds {
             compatible = "gpio-leds";
             led_0: led_red {
-                gpios = <&gpio0 21 GPIO_ACTIVE_LOW>;
+                gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
                 label = "Red LED";
                 status = "okay";
             };
             led_1: led_blue {
-                gpios = <&gpio1 23 GPIO_ACTIVE_LOW>;
+                gpios = <&gpio1 23 GPIO_ACTIVE_HIGH>;
                 label = "Blue LED";
                 status = "okay";
             };

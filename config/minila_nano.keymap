@@ -56,7 +56,7 @@
 &trans     &kp Q     &kp W   &kp UP    &kp R        &kp T      &kp Y        &kp U   &kp UP       &kp O      &kp P      &trans    &trans                    &kp CAPS
 &trans               &kp A   &kp LEFT  &kp DOWN     &kp RIGHT  &kp G        &kp H   &kp LEFT     &kp DOWN   &kp RIGHT  &kp BSPC  &trans                    &trans
 &trans               &kp Z   &kp X     &kp C        &kp V      &kp B        &kp N   &kp DEL      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT       &kp UP    &trans
-&trans     &kp LALT          &kp LGUI  &lt 1 SPACE             &lt 1 SPACE          &lt 1 SPACE  &kp RGUI              &kp RALT  &mt RCTRL LEFT  &kp DOWN  &kp RIGHT
+&trans     &kp LALT          &kp LGUI  &lt 1 SPACE             &lt 1 SPACE          &lt 1 SPACE  &kp RGUI              &kp RALT  &mt RCTRL LEFT  &trans    &kp RIGHT
             >;
         };
 
