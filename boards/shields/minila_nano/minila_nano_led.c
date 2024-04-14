@@ -19,14 +19,11 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/events/ble_active_profile_changed.h>
 
 #define LED_NODE_R DT_ALIAS(ledred)
-#define LED_NODE_G DT_ALIAS(ledgreen)
 #define LED_NODE_B DT_ALIAS(ledblue)
 
 #if !DT_NODE_HAS_STATUS(LED_NODE_R, okay)
-#if !DT_NODE_HAS_STATUS(LED_NODE_G, okay)
 #if !DT_NODE_HAS_STATUS(LED_NODE_B, okay)
 #error "Unsupported board: led devicetree alias is not defined"
-#endif
 #endif
 #endif
 
@@ -49,19 +46,20 @@ void reset_leds() {
         gpio_pin_configure_dt(&LED_B, GPIO_DISCONNECTED);
     }
 }
+
 void set_led(size_t index) {
     if(index == RED) {
         int ret;
         if (!device_is_ready(LED_R.port)) {
             return;
         }
-        ret = gpio_pin_configure_dt(&LED_R, GPIO_OUTPUT_LOW);
+        ret = gpio_pin_configure_dt(&LED_R, GPIO_OUTPUT_HIGH);
     } else if(index == BLUE) {
         int ret;
         if (!device_is_ready(LED_B.port)) {
             return;
         }
-        ret = gpio_pin_configure_dt(&LED_B, GPIO_OUTPUT_LOW);
+        ret = gpio_pin_configure_dt(&LED_B, GPIO_OUTPUT_HIGH);
     }
     return;
 }
@@ -80,7 +78,7 @@ int led_listener(const zmk_event_t *eh) {
     if ((profile_ev = as_zmk_ble_active_profile_changed(eh)) == NULL) {
         return ZMK_EV_EVENT_BUBBLE;
     }
-    LOG_WRN("Active profile index:%d", profile_ev->index);
+    LOG_WRN("======= Active profile index:%d", profile_ev->index);
 
     k_timer_stop(&led_timer);
 
