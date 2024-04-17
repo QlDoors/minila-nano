@@ -22,6 +22,9 @@
     "atomic.h": "c",
     "cbprintf.h": "c",
     "kernel.h": "c",
-    "cstdlib": "c"
+    "cstdlib": "c",
+    "led.h": "c",
+    "usb_conn_state_changed.h": "c",
+    "hid_indicators_changed.h": "c"
 }
 }

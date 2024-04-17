@@ -8,8 +8,13 @@ config ZMK_KEYBOARD_NAME
 
 config MINILA_INDICATORS_LED
     bool "Minila HID Indicators"
+    def_bool y
     help
       Enable HID indicators, used for detecting state of Caps/Scroll/Num Lock,
       Kata, and Compose.
+
+config MINILA_BATTERY_LED
+    bool "Minila battery led"
+    def_bool y
 
 endif
