@@ -1,0 +1,26 @@
+{
+  "files.associations": {
+    "*.defconfig": "kconfig",
+    "*.shield": "kconfig",
+    "*.conf": "kconfig",
+    "*.overlay": "dts",
+    "*.keymap": "dts",
+    "layer_state_changed.h": "c",
+    "gpio.h": "c",
+    "device.h": "c",
+    "devicetree.h": "c",
+    "log.h": "c",
+    "log_core.h": "c",
+    "iterable_sections.h": "c",
+    "log_instance.h": "c",
+    "__assert.h": "c",
+    "toolchain.h": "c",
+    "log_msg.h": "c",
+    "mpsc_packet.h": "c",
+    "util.h": "c",
+    "string.h": "c",
+    "atomic.h": "c",
+    "cbprintf.h": "c",
+    "kernel.h": "c"
+}
+}
