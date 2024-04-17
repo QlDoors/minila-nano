@@ -3,9 +3,8 @@
  *
  * SPDX-License-Identifier: MIT
  */
-#define JUDE_INDICATORSLED // #if IS_ENABLED()
 
-#if defined(JUDE_INDICATORSLED)
+#if (CONFIG_MINILA_INDICATORS_LED == 1)
 
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/logging/log.h>
@@ -40,4 +39,4 @@ static int indicators_listener(const zmk_event_t *eh) {
 ZMK_LISTENER(minila_indicators, indicators_listener);
 ZMK_SUBSCRIPTION(minila_indicators, zmk_hid_indicators_changed);
 
-#endif  // #if defined(JUDE_BLE_LED)
+#endif  // #if (CONFIG_MINILA_INDICATORS_LED > 0)

@@ -21,6 +21,7 @@
     "string.h": "c",
     "atomic.h": "c",
     "cbprintf.h": "c",
-    "kernel.h": "c"
+    "kernel.h": "c",
+    "cstdlib": "c"
 }
 }

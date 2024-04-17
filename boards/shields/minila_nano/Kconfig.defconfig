@@ -6,4 +6,10 @@ if SHIELD_MINILA_NANO
 config ZMK_KEYBOARD_NAME
     default "MinilaNano"
 
+config MINILA_INDICATORS_LED
+    bool "Minila HID Indicators"
+    help
+      Enable HID indicators, used for detecting state of Caps/Scroll/Num Lock,
+      Kata, and Compose.
+
 endif
