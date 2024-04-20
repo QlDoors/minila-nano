@@ -21,4 +21,8 @@ config MINILA_BATTERY_VOL
     int "Minila batter volume, unit mAh"
     default 2000
 
+config MINILA_BLE_LED
+    bool "Minia bluetooth led"
+    def_bool y
+
 endif
