@@ -26,6 +26,13 @@
     "led.h": "c",
     "usb_conn_state_changed.h": "c",
     "hid_indicators_changed.h": "c",
-    "battery_state_changed.h": "c"
+    "battery_state_changed.h": "c",
+    "hid_indicators.h": "c",
+    "event_manager.h": "c",
+    "battery.h": "c",
+    "kernel_includes.h": "c",
+    "printk.h": "c",
+    "syscall.h": "c",
+    "stdbool.h": "c"
   }
 }

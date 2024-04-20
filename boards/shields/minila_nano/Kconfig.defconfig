@@ -17,4 +17,8 @@ config MINILA_BATTERY_LED
     bool "Minila battery led"
     def_bool y
 
+config MINILA_BATTERY_VOL
+    int "Minila batter volume, unit mAh"
+    default 2000
+
 endif
