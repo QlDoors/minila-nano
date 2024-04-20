@@ -35,7 +35,7 @@ void led_stop_blink_timer();
 
 void led_blink_timer_fn()
 {
-    LOG_DBG("**** ed_blink_timer_fn(): start: is_blink = %d, is_on = %d", is_blink, is_on);
+    LOG_DBG("start: is_blink = %d, is_on = %d", is_blink, is_on);
     if (is_charging || battery_level > BLINK_LEVEL) {
         led_stop_blink_timer();
         return;
@@ -72,7 +72,7 @@ void stop_battery_report_timer();
 void battery_report_timer_fn()
 {
     uint32_t cur_time = k_uptime_get_32();
-    LOG_DBG("battery_report_timer_fn(): cur_time = %d, charge_complete_time = %d, is_charging = %d", cur_time, charge_complete_time, is_charging);
+    LOG_DBG("cur_time = %d, charge_complete_time = %d, is_charging = %d", cur_time, charge_complete_time, is_charging);
     if (charge_complete_time <= cur_time || is_charging == 0) {
         set_led(RED, CLOSE);
         stop_battery_report_timer();
@@ -100,7 +100,7 @@ static int battery_listener(const zmk_event_t* eh)
     battery_level = (ev != NULL && ev->state_of_charge > 0) ? ev->state_of_charge : zmk_battery_state_of_charge();
     bool usb_present = zmk_usb_is_powered();
 
-    LOG_DBG("battery_listener: level = %d, usb = %d, is_charging = %d", battery_level, usb_present, is_charging);
+    LOG_DBG("level = %d, usb = %d, is_charging = %d", battery_level, usb_present, is_charging);
     if (battery_level < 100) {
         if (usb_present) {
             if (is_charging == false) { // First time usb_present is detected.

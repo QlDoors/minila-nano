@@ -8,7 +8,7 @@
 
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/logging/log.h>
-LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
+LOG_MODULE_REGISTER(minila_indicator_led, CONFIG_ZMK_LOG_LEVEL);
 
 #include <zmk/events/hid_indicators_changed.h>
 #include <zmk/hid_indicators.h>
@@ -26,7 +26,7 @@ static int indicators_listener(const zmk_event_t* eh)
     }
 
     if (ev->indicators != pre_indicator) {
-        LOG_DBG("****indicators_listener: indicators changed, pre = %d, cur = %d", pre_indicator, ev->indicators);
+        LOG_DBG("indicators changed, pre = %d, cur = %d", pre_indicator, ev->indicators);
         if (ev->indicators == HID_USAGE_LED_CAPS_LOCK) {
             set_led(BLUE, OPEN);
         } else {

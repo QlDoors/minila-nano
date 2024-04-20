@@ -28,7 +28,7 @@ int ble_led_listener(const zmk_event_t* eh)
     if (profile_ev == NULL) {
         return ZMK_EV_EVENT_BUBBLE;
     }
-    LOG_DBG("ble_led_listener: Active profile index: %d", profile_ev->index);
+    LOG_DBG("Active profile index: %d", profile_ev->index);
 
     set_led(BLUE, OPEN);
     k_timer_start(&ble_led_timer, K_SECONDS(3), K_NO_WAIT);
