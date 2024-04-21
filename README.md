@@ -31,10 +31,9 @@ The final configuration of the pin map is as follows:
 
 ## Building the Firmware
 
-To build the firmware for your keyboard, follow these steps:
+To build the firmware, follow these steps:
 
-```
-bashCopy code
+```bash
 git clone https://github.com/QlDoors/minila-nano.git
 git clone https://github.com/zmkfirmware/zmk.git
 cd zmk
