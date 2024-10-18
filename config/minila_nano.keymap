@@ -21,6 +21,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        del {
+            bindings = <&kp LS(K_APP)>;
+            key-positions = <50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
