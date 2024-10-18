@@ -24,9 +24,14 @@
     combos {
         compatible = "zmk,combos";
 
+        app {
+            bindings = <&kp K_APP>;
+            key-positions = <53 55>;
+        };
+
         del {
-            bindings = <&kp LS(K_APP)>;
-            key-positions = <50>;
+            bindings = <&kp DEL>;
+            key-positions = <13 14>;
         };
     };
 
