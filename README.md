@@ -44,3 +44,7 @@ west build -p -b nice_nano_v2 -- -DSHIELD=minila_nano -DZMK_EXTRA_MODULES="/path
 ```
 
 Replace `/path/to/minila-nano` with the actual path to the cloned `minila-nano` directory on your system.
+
+## Keymap Editor
+
+[https://nickcoutsos.github.io/keymap-editor/](https://nickcoutsos.github.io/keymap-editor/)
