@@ -74,11 +74,11 @@
             = <&gpio0 31 GPIO_ACTIVE_HIGH> // row 0
             , <&gpio0 29 GPIO_ACTIVE_HIGH> // row 1
             , <&gpio0 2  GPIO_ACTIVE_HIGH> // row 2
-            , <&gpio1 15 GPIO_ACTIVE_HIGH> // row 2
-            , <&gpio1 13 GPIO_ACTIVE_HIGH> // row 3
-            , <&gpio1 11 GPIO_ACTIVE_HIGH> // row 4
-            , <&gpio0 10 GPIO_ACTIVE_HIGH> // row 5
-            , <&gpio0 9  GPIO_ACTIVE_HIGH> // row 6
+            , <&gpio1 15 GPIO_ACTIVE_HIGH> // row 3
+            , <&gpio1 13 GPIO_ACTIVE_HIGH> // row 4
+            , <&gpio1 11 GPIO_ACTIVE_HIGH> // row 5
+            , <&gpio0 10 GPIO_ACTIVE_HIGH> // row 6
+            , <&gpio0 9  GPIO_ACTIVE_HIGH> // row 7
             ;
     };
 };
