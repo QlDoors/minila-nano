@@ -35,6 +35,7 @@
     "syscall.h": "c",
     "stdbool.h": "c",
     "bas.h": "c",
-    "ble_active_profile_changed.h": "c"
+    "ble_active_profile_changed.h": "c",
+    "ext_power.h": "c"
   }
 }
