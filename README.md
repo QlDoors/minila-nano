@@ -17,8 +17,6 @@ To reduce pin usage, the following pin mergers were implemented:
 - **C7, C13** merged to **C7**
 - **C10, C12** merged to **C10**
 
-Additionally, to conserve power, LED pins have been swapped.
-
 ### Revised Pin Map
 
 The final configuration of the pin map is as follows:
